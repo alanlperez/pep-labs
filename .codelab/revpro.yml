@@ -2,7 +2,7 @@
 :lab_name: pep-labs
 :repo_path: "/workspace/revpro-cli/pep-labs"
 :previous_lab: 
-:current_lab: 
+:current_lab: ReturnArrayContents
 :origin_remote: https://github.com/alanlperez/pep-labs.git
 :repo_clone_folder: "/workspace/revpro-cli/pep-labs"
 :github_username: alanlperez
@@ -292,6 +292,8 @@
     :tests:
       arrayStringTest1: 0
       arrayStringTest2: 0
+      setTest1: 0
+      setTest2: 0
   GuessingGame:
     :Week: 2
     :Order: 13
