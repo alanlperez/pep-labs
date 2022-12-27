@@ -32,6 +32,7 @@ public class ReturnArrayContents {
         for (int i = 0; i < nums.length; i++)
         {
             str += nums[i];
+            str += ' ';
         }
         System.out.println(str);  
         return str;
