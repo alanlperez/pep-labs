@@ -310,6 +310,7 @@
     :count_tests_passed: 0
     :tests:
       exceptionMustThrowTest: 0
+      ExceptionTest: 0
   UncheckedException:
     :Week: 3
     :Order: 2
