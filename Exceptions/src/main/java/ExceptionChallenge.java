@@ -18,11 +18,6 @@ public class ExceptionChallenge {
      */
 
     public void mustThrow()throws Exception{ 
-        try
-        {
-        }
-        catch(Exception e)
-        {
-        }
+        throw new Exception("Exception is thrown");
     }
 }
