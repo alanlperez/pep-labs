@@ -1,1 +1,1 @@
- UPDATE site_user SET last_name = Rush WHERE first_name = Alexa;
+ UPDATE site_user SET lastname = 'Rush' WHERE firstname = 'Alexa';
