@@ -1,4 +1,5 @@
 
+import java.util.HashSet;
 public class DoesNotContain {
     /**
      * The inverse of the contains value challenge: check if the array does *not* contain the value.
@@ -13,6 +14,16 @@ public class DoesNotContain {
      * @return true if arr does not contain target. false otherwise.
      */
     public boolean arrayDoesNotContain(int[] arr, int target){
-        return false;
+        HashSet<Integer> integerSet = new HashSet<Integer>(); 
+        for(int i = 0; i < arr.length; i++)
+        {
+            integerSet.add(arr[i]);
+        }
+        if (integerSet.contains(target))
+        {
+            return false;
+        }
+
+        return true;
     }
 }
