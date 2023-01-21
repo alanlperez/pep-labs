@@ -1,3 +1,4 @@
+import javax.swing.text.AbstractDocument.BranchElement;
 
 //
 
@@ -11,6 +12,14 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
+        int i = 0;
+        while (i < arr.length)
+        {
+            if (arr[i] == n){
+                return i;} 
+            i++;
+        }
         return -1;
     }
+   
 }
