@@ -61,7 +61,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            preparedStatement.setInt(1, Book.isbn);
+            preparedStatement.setInt(1, isbn);
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
@@ -88,10 +88,11 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "change me" ;
+            String sql = "INSERT INTO Book VALUES (?)" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
+            preparedStatement.set
 
             preparedStatement.executeUpdate();
             return book;
