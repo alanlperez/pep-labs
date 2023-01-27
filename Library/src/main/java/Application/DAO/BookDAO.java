@@ -92,7 +92,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.set
+            preparedStatement.set;
 
             preparedStatement.executeUpdate();
             return book;
