@@ -16,7 +16,6 @@ public class ContainsDuplicates {
             }
             hashSet.add(nums[i]);
         }
-
         return false;
     }
 }
