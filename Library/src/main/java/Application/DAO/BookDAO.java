@@ -10,6 +10,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
+
 /**
  * A DAO is a class that mediates the transformation of data between the format of objects in Java to rows in a
  * database. The methods here are mostly filled out, you will just need to add a SQL statement.
@@ -88,11 +90,14 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "INSERT INTO Book VALUES (?)" ;
+            String sql = "INSERT INTO Book VALUES (?, ?, ?, ?)" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.set;
+            preparedStatement.setInt(1, book.getIsbn());
+            preparedStatement.setInt(2, book.getAuthor_id());
+            preparedStatement.setString(3, book.getTitle());
+            preparedStatement.setInt(4, book.getCopies_available());
 
             preparedStatement.executeUpdate();
             return book;
@@ -111,7 +116,7 @@ public class BookDAO {
         List<Book> books = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "SELECT * FROM Book WHERE Book.copies_available > 0";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
