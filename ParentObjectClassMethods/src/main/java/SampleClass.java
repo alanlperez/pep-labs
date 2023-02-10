@@ -57,7 +57,7 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
     public boolean equals(SampleClass other){
-        this.a = a; 
+        return this.a == other.a; 
     }
 
     //    implement a custom .toString(){} method here.
